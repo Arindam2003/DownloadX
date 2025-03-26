@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+span{
+    font-size: .5rem;
+    color: rgb(4, 127, 96);
+}
+.full {
+  background-color: rgb(208, 230, 248);
+  height: 18rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: absolute;
+}
+
+.complete {
+  background-color: rgb(6, 181, 6);
+  width: 0%;
+  height: 100%;
+  border-radius: 10rem;
+}
+
+.progress {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: rgb(192, 189, 189);
+  height: 1rem;
+  border-radius: 10rem;
+}
+
+.percent {
+  align-self: flex-end;
+}
+
+.download {
+  width: 100%;
+  margin-top: 1.5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(6, 168, 6);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5rem;
+}
+button:active {
+  scale: 0.95;
+}
+
+.watermark{
+    position: relative;
+    background-color: rgb(169, 247, 169);
+    top: -2.7rem;
+    right: -10.5rem;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+@media (min-width: 1020px) {
+  .full {
+    height: 40%;
+    width: 70%;
+    border-radius: 3rem;
+    /* position: absolute; */
+  }
+  .complete {
+    background-color: rgb(6, 181, 6);
+    width: 0%;
+    height: 100%;
+    border-radius: 10rem;
+  }
+
+  .progress {
+    display: block;
+    width: 100%;
+    background-color: rgb(192, 189, 189);
+    height: 1rem;
+  }
+
+  .percent {
+    align-self: flex-end;
+  }
+
+  .download {
+    width: 100%;
+    margin-top: 1.5rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(6, 168, 6);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5rem;
+  }
+  button:active {
+    scale: 0.95;
+  }
+  .watermark{
+    position: relative;
+    background-color: aqua;
+    padding: 0.5rem;
+    top: 0.3rem;
+    right:-26rem;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+}
